@@ -1,4 +1,146 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <!-- Ваше решение -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic Mockup</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: red;
+        }
+
+        .header__title {
+            color: white;
+            font-size: 2rem;
+            padding: 10px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: orange;
+            padding: 10px;
+        }
+
+        .nav__list {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav__item {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav__item:not(:last-child)::after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: white;
+            margin: 0 10px;
+        }
+
+        .nav__link {
+            color: white;
+            font-size: 1.4rem;
+            text-decoration: none;
+        }
+
+        .nav__link:hover {
+            color: red;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            background-color: green;
+            padding: 10px
+        }
+
+        .article {
+            background-color: #269f27;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .article__title {
+            color: white;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .list {
+            padding-left: 20px;
+        }
+
+        .list__item {
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .list__item::marker {
+            color: #ffd78e;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            background-color: blueviolet;
+            padding: 10px;
+        }
+
+        .footer__text {
+            font-size: 2rem;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Header</h1>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#go1" class="nav__link">Go to 1</a></li>
+                <li class="nav__item"><a href="#go2" class="nav__link">Go to 2</a></li>
+                <li class="nav__item"><a href="#go3" class="nav__link">Go to 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <article class="article">
+            <h2 class="article__title">Article 1</h2>
+            <ul class="list">
+                <li class="list__item">Оригинальная трилогия</li>
+                <li class="list__item">Трилогия приквелов</li>
+                <li class="list__item">Трилогия сиквелов</li>
+            </ul>
+        </article>
+        <article class="article">
+            <h2 class="article__title">Article 2</h2>
+            <ol class="list">
+                <li class="list__item">Эпизод IV — Новая надежда</li>
+                <li class="list__item">Эпизод V — Империя наносит ответный удар</li>
+                <li class="list__item">Эпизод VI — Возвращение джедая</li>
+            </ol>
+        </article>
+    </main>
+    <footer class="footer">
+        <span class="footer__text">Footer</span>
+    </footer>
+</body>
+
 </html>
