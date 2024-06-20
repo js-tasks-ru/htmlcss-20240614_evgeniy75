@@ -1,11 +1,16 @@
+@import '../css/modern-normalize.css';
 @import '../fonts/fonts.css';
+@import '../../components/page/page.css';
 
 :root {
     --white: #ffffff;
     --black: #212429;
     --pink: #F784AD;
     --purple: #7048E8;
+    --purple-light: #f0ebff;
+    --purple-dark: #563da1;
     --blue: #374FC7;
+    --blue-light: #f9fafc;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
@@ -17,8 +22,33 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --shadow-primary: lightgrey;
+
+    --text-color-primary: var(--purple-dark);
+    --text-color-secondary: var(--purple-dark);
+
+    --border-color: var(--purple-dark);
+
+    --bg-primary: var(--white);
+    --bg-secondary: var(--bg-gradient);
+    --bg-gradient: linear-gradient(261deg, rgba(112, 72, 232, 1) 0%, rgba(86, 61, 161, 1) 49%, rgba(99, 64, 179, 1) 75%, rgba(137, 72, 232, 1) 100%);
+    --bg-body: var(--purple-light);
+
+    --padding-base: 20px;
+    --border-radius: 10px;
 }
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.root {
+    padding: var(--padding-base);
+    background-color: var(--bg-body)
 }
