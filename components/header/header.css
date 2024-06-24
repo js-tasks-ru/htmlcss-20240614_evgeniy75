@@ -1,0 +1,10 @@
+.header {
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--border-color);
+    padding: var(--padding-size-xl) 0;
+}
+
+.header__title {
+    display: flex;
+    align-items: center;
+}
