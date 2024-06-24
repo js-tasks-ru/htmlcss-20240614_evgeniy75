@@ -9,6 +9,7 @@
 @import '../../components/about/about.css';
 @import '../../components/card/card.css';
 @import '../../components/button/button.css';
+@import '../../components/accordion/accordion.css';
 
 :root {
     --white: #ffffff;
@@ -36,6 +37,7 @@
     --padding-size-xl: 3.75rem;
     --padding-size-l: 2.5rem;
     --padding-size-m: 1.25rem;
+    --padding-size-s: .625rem;
     --border-size-radius: .625rem;
     --border-color: var(--purple-dark);
 
