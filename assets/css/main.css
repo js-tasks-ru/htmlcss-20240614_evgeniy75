@@ -8,6 +8,7 @@
 @import '../../components/footer/footer.css';
 @import '../../components/about/about.css';
 @import '../../components/card/card.css';
+@import '../../components/button/button.css';
 
 :root {
     --white: #ffffff;
@@ -47,8 +48,8 @@
     --bg-gradient: linear-gradient(261deg, rgba(112, 72, 232, 1) 0%, rgba(86, 61, 161, 1) 49%, rgba(99, 64, 179, 1) 75%, rgba(137, 72, 232, 1) 100%);
 
     /* button */
-    --button-bg-secondary: var(--purple-2);
     --button-bg-primary: var(--blue-2);
+    --button-bg-secondary: var(--purple-2);
     --button-bg-alternate: var(--white);
     --button-bg-primary-hover: var(--blue-1);
     --button-bg-secondary-hover: var(--purple-1);
