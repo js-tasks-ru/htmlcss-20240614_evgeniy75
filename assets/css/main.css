@@ -1,11 +1,29 @@
+@import '../css/modern-normalize.css';
 @import '../fonts/fonts.css';
+
+@import '../../components/page/page.css';
+@import '../../components/title/title.css';
+@import '../../components/text/text.css';
+@import '../../components/wrap/wrap.css';
+@import '../../components/header/header.css';
+@import '../../components/content/content.css';
+@import '../../components/footer/footer.css';
+@import '../../components/about/about.css';
+@import '../../components/card/card.css';
 
 :root {
     --white: #ffffff;
     --black: #212429;
     --pink: #F784AD;
-    --purple: #7048E8;
-    --blue: #374FC7;
+    --purple-1: #5028C6;
+    --purple-2: #7048E8;
+    --purple-3: #b7a3f4;
+    --purple-light: #f0ebff;
+    --purple-dark: #563da1;
+    --blue-1: #374FC7;
+    --blue-2: #4263EB;
+    --blue-3: #a0b2f5;
+    --blue-light: #f9fafc;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
@@ -15,10 +33,28 @@
     --error: var(--red);
     --success: var(--blue);
 
-    --primary: var(--blue);
-    --secondary: var(--purple);
+    --shadow-primary: lightgrey;
+    --padding-size-xl: 60px;
+    --padding-size-l: 40px;
+    --padding-size-m: 20px;
+    --padding-size-s: 10px;
+    --border-size-radius: 10px;
+    --border-color: var(--grey-2);
+
+    --text-color-primary: var(--black);
+    --text-color-secondary: var(--grey-4);
+
+    --bg-page: var(--purple-light);
+    --bg-primary: var(--white);
+    --bg-secondary: var(--blue-light);
 }
 
 * {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

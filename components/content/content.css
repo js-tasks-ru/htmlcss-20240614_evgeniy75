@@ -1,0 +1,10 @@
+.content {
+    background-color: var(--bg-secondary);
+    padding: var(--padding-size-xl) 0;
+}
+
+.content__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}

@@ -1,0 +1,11 @@
+.footer {
+    background: var(--bg-primary);
+    border-top: 1px solid var(--border-color);
+    padding: var(--padding-size-xl) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer__about {
+    margin: 0 auto;
+}

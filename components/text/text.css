@@ -1,0 +1,31 @@
+.text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: left;
+    color: var(--text-color-primary);
+}
+
+.text_size_m {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.text_size_s {
+    font-size: .875rem;
+    line-height: 1.375rem;
+}
+
+.text_color_grey {
+    color: var(--text-color-secondary);
+}
+
+.text_weight_thin {
+    font-weight: 100;
+}
+
+.text_align_center {
+    text-align: center;
+}
