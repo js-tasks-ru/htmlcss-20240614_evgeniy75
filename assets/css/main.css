@@ -1,15 +1,26 @@
 @import '../css/modern-normalize.css';
 @import '../fonts/fonts.css';
+
 @import '../../components/page/page.css';
+@import '../../components/wrap/wrap.css';
+@import '../../components/header/header.css';
+@import '../../components/content/content.css';
+@import '../../components/footer/footer.css';
+@import '../../components/about/about.css';
+@import '../../components/card/card.css';
 
 :root {
     --white: #ffffff;
     --black: #212429;
     --pink: #F784AD;
-    --purple: #7048E8;
+    --purple-1: #5028C6;
+    --purple-2: #7048E8;
+    --purple-3: #b7a3f4;
     --purple-light: #f0ebff;
     --purple-dark: #563da1;
-    --blue: #374FC7;
+    --blue-1: #374FC7;
+    --blue-2: #4263EB;
+    --blue-3: #a0b2f5;
     --blue-light: #f9fafc;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
@@ -20,35 +31,90 @@
     --error: var(--red);
     --success: var(--blue);
 
-    --primary: var(--blue);
-    --secondary: var(--purple);
-
     --shadow-primary: lightgrey;
-
-    --text-color-primary: var(--purple-dark);
-    --text-color-secondary: var(--purple-dark);
-
+    --padding-size-xl: 3.75rem;
+    --padding-size-l: 2.5rem;
+    --padding-size-m: 1.25rem;
+    --border-size-radius: .625rem;
     --border-color: var(--purple-dark);
 
-    --bg-primary: var(--white);
-    --bg-secondary: var(--bg-gradient);
-    --bg-gradient: linear-gradient(261deg, rgba(112, 72, 232, 1) 0%, rgba(86, 61, 161, 1) 49%, rgba(99, 64, 179, 1) 75%, rgba(137, 72, 232, 1) 100%);
-    --bg-body: var(--purple-light);
+    --text-color-primary: var(--grey-4);
+    --text-color-secondary: var(--purple-dark);
 
-    --padding-base: 20px;
-    --border-radius: 10px;
+    --bg-page: var(--purple-light);
+    --bg-primary: var(--white);
+    --bg-secondary: var(--blue-light);
+    --bg-gradient: linear-gradient(261deg, rgba(112, 72, 232, 1) 0%, rgba(86, 61, 161, 1) 49%, rgba(99, 64, 179, 1) 75%, rgba(137, 72, 232, 1) 100%);
+
+    /* button */
+    --button-bg-secondary: var(--purple-2);
+    --button-bg-primary: var(--blue-2);
+    --button-bg-alternate: var(--white);
+    --button-bg-primary-hover: var(--blue-1);
+    --button-bg-secondary-hover: var(--purple-1);
+    --button-bg-alternate-hover: var(--white);
+    --button-bg-primary-disabled: var(--blue-3);
+    --button-bg-secondary-disabled: var(--purple-3);
+    --button-bg-alternate-disabled: var(--white);
+
 }
 
 * {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
-html,
-body {
-    height: 100%;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .root {
-    padding: var(--padding-base);
-    background-color: var(--bg-body)
+    padding: var(--padding-size-m);
+    background-color: var(--bg-page)
+}
+
+.title {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 4rem;
+    color: var(--text-color-secondary);
+}
+
+.title_size_xl {
+    font-size: 3.125rem;
+}
+
+.title_size_l {
+    font-size: 2.375rem;
+    line-height: 3rem;
+}
+
+.title_size_m {
+    font-size: 1.3125rem;
+    line-height: 1.5625rem;
+}
+
+.title_size_l {
+    font-size: 2.375rem;
+    line-height: 3rem;
+}
+
+.text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--text-color-primary);
+}
+
+.text_weight_thin {
+    font-weight: 100;
+}
+
+.text_align_center {
+    text-align: center;
 }
